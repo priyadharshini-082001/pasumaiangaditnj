@@ -588,7 +588,7 @@ function sendWhatsApp(el){
     let product = el.getAttribute("data-product");
 
     let message = `Hi, நான் ${product} வாங்க விரும்புகிறேன்.விலை, அளவு மற்றும் டெலிவரி விவரங்களை பகிரவும்.
-    (Hi, I would like to buy Mappillai Samba rice.Please share the price, quantity, and delivery details.)`;
+    (Hi, I would like to buy ${product}.Please share the price, quantity, and delivery details.)`;
 
     let url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
